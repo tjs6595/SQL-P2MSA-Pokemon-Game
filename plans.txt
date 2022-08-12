@@ -1,0 +1,103 @@
+INITIAL MVP GOAL: 
+Player character can move around, catch a Pokemon or get one from the professor, 
+and fight an NPC (probably their rival)
+
+-----------------JAVASCRIPT-----------------------------
+[] Place Items
+    [] Player Character
+    [] NPCs
+    [] Interactable objects
+    [] Background/Map
+
+[] Move Player Character
+    [] Player character moves when arrow keys are pressed
+    [] Player character has appropriate walking sprite when moving
+        (different sprite rotations)
+
+[] Interact with World
+    [] When player presses button (spacebar?) they can...
+        [] Talk to NPC
+        [] Pick up an item (mostly for when player chooses their first Pokemon)
+        [] Interact with object? MAYBE if there's time. This, for example, 
+        is when the player interacts with something like a bookcase, and there
+        is a dialogue pop up that might mention a book on the shelf. Could be
+        fun easter eggs with this.
+
+[] Continue Dialogue
+    [] When an NPC says their line, there will be a stop, and
+    the player must press the Enter button to make the NPC keep talking
+    [] This applies to interacting with objects too. Press Enter to make the dialogue continue/end.
+
+[] Enter Building (or new place)
+    [] When player walks through door or entrance, the screen
+    will go black, and then load the new location
+
+[] Collision Detection
+    [] If player walks into an object (that is not an entrance), they stop moving
+    [] Could be a bump sound effect
+
+[] Set Battle
+    [] Sets battle scene background
+    [] Sets the patches of grass or whatever that the Pokemon stand on
+
+[] Battle NPC (not done yet)
+    [] Battle NPC Dialogue:
+        { NPC NAME } wants to battle!
+        (player presses Enter to continue)
+        { NPC NAME } sent out { NPC POKEMON }!
+        Go! { PLAYER POKEMON }!
+        What will { PLAYER POKEMON } do? 
+
+------------------DATABASE---------------------------
+
+--------------RESOURCES-----------------------
+Pokemon Battle compilation (could be helpful for making the battles flow)
+    https://www.youtube.com/watch?v=y76gtMsPDW8&ab_channel=Master0fHyrule
+
+-----------------GENERAL REQUIREMENTS---------------------
+[] runs in web browser
+[] minimum of 20 git commits
+[x] empty repo is on GitHub on day one
+[] aim for multiple commits per day
+[] application must be deployed (Heroku)
+
+APPLICATION REQUIREMENTS
+[] must be a full-stack application with front and back-end
+[] app should use full CRUD functionality with the database
+[] should be a complete project
+[] effort must be spent on styling and appearance
+[] use several sensibly named components in React
+[x] app should have a Readme.md file that
+    [] describes the inspiration for the app
+    [] how to use the app
+    [] list of technologies used to build the app
+    [] addresses any outstanding bugs or unfinished functionality
+
+DELIVERABLES
+[] working app built by whole group
+[] link to app deployed on Internet
+[] link to GitHub repo to show progress
+[] ReadMe.md file
+
+------------------GRADING SCALE----------------------------
+User Experience
+[] Was effort put into styling? 
+[] Is this a fun game to play? 
+[] Are the controls intuitive?
+
+Functionality
+[] Is the game playable? 
+[] Do all features work? 
+[] Is there a win/lose/score condition?
+
+Workflow
+[] Did you use GitHub properly? 
+[] Is there a readme?
+
+Code Style
+[] Does the code follow best practices/naming conventions? 
+[] Is it DRY?
+
+Presentation
+[] Did the student present the project to the class? 
+[] Is the site deployed where others can access?
