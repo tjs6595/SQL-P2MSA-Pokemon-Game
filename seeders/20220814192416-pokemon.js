@@ -21,7 +21,7 @@ module.exports = {
       {
         nickname: 'Pokemon 2',
         level: 4,
-        species_id: 1,
+        species_id: 2,
         type_1_id: 1,
         type_2_id: 5,
         ability_id: 3,
@@ -36,7 +36,7 @@ module.exports = {
       {
         nickname: 'Pokemon 3',
         level: 5,
-        species_id: 1,
+        species_id: 2,
         type_1_id: 1,
         type_2_id: 5,
         ability_id: 3,
@@ -51,7 +51,7 @@ module.exports = {
       {
         nickname: 'Pokemon 4',
         level: 4,
-        species_id: 1,
+        species_id: 3,
         type_1_id: 1,
         type_2_id: null,
         ability_id: 5,
@@ -66,7 +66,7 @@ module.exports = {
       {
         nickname: 'Pokemon 5',
         level: 5,
-        species_id: 2,
+        species_id: 4,
         type_1_id: 2,
         type_2_id: null,
         ability_id: 2,
@@ -81,7 +81,7 @@ module.exports = {
       {
         nickname: 'Pokemon 6',
         level: 6,
-        species_id: 1,
+        species_id: 5,
         type_1_id: 1,
         type_2_id: 5,
         ability_id: 3,
@@ -96,7 +96,7 @@ module.exports = {
       {
         nickname: 'Pokemon 7',
         level: 3,
-        species_id: 1,
+        species_id: 5,
         type_1_id: 1,
         type_2_id: 5,
         ability_id: 3,
@@ -111,7 +111,7 @@ module.exports = {
       {
         nickname: 'Pokemon 8',
         level: 5,
-        species_id: 1,
+        species_id: 6,
         type_1_id: 3,
         type_2_id: null,
         ability_id: 1,
@@ -126,7 +126,7 @@ module.exports = {
       {
         nickname: 'Pokemon 9',
         level: 3,
-        species_id: 1,
+        species_id: 3,
         type_1_id: 1,
         type_2_id: null,
         ability_id: 5,

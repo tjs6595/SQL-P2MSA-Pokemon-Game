@@ -9,7 +9,7 @@ module.exports = {
       {name: 'Grass'},
       {name: 'Flying'},
       {name: 'Bug'},
-      {name: 'Electric'},
+      {name: 'Electric'}
     ], {});
   },
 
