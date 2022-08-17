@@ -3,6 +3,14 @@ body {
     text-align: center;
   }
 
+h1 {
+  color: #cd2715;
+}
+
+h4 {
+  color: #4F4843;
+}
+
 main {
   margin-right: 20px;
   margin-left: 20px;
@@ -10,6 +18,7 @@ main {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 25px;
+
 }
 
 nav ul {
@@ -35,6 +44,29 @@ nav a:hover{
 
 }
 
+.instructions {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.3em;
+}
+
 #errorPageText {
   font-size: 2em;
+}
+
+footer {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #F7E3B7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 25px;
+}
+
+li {
+  list-style-type: none;
 }

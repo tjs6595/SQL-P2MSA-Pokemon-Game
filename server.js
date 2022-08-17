@@ -39,6 +39,11 @@ app.get('/instructions', (req, res) => {
     res.render('instructions')
 })
 
+// PLAY GAME PAGE
+app.get('/play', (req, res) => {
+    res.render('play')
+})
+
 // ERROR 404 ROUTE
 app.get('*', (req, res) => {
     res.render('error404')

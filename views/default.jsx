@@ -2,6 +2,7 @@
 // DEPENDENCIES
 const React = require('react');
 
+
 // stub function for HTML template
 function Def(html){
     return (
@@ -25,13 +26,22 @@ function Def(html){
                     <li>
                         <a href='/instructions'><i class="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>
                     </li>
+                    <li>
+                        <a href='/play'>Play</a>
+                    </li>
                 </ul>
             </nav>
             <body>
                 {html.children}
             </body>
             <footer>
-                <p>test</p>
+                <p>Milestone Project 2: MERN Stack Application</p>
+                <ul><b><u>Game Creators</u></b>
+                    <li>Rebecca Coburn,</li> 
+                    <li>Mallory Fellows, </li>
+                    <li>Jarrod Helmers, and </li>
+                    <li>Tim Schultejans</li>
+                </ul>
             </footer>
         </html>
     )

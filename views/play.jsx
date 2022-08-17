@@ -2,16 +2,15 @@
 const React = require('react');
 const Def = require('./default');
 
-function home(){
+function play(){
     return (
         <Def>
             <main>
-                <h1>Pokemon-Style Game</h1>
-                <p>Game needs a new title before we get a cease and desist from Nintendo</p>
+                <p>Game window goes here?</p>
             </main>
         </Def>
     )
 }
 
 // EXPORTS
-module.exports = home
+module.exports = play
