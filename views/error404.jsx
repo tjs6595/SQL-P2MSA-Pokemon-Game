@@ -1,7 +1,7 @@
 // Error page
 //import React and Def from default.jsx
 const React = require('react');
-const Def = require('./layouts/default');
+const Def = require('./default');
 
 //create error404 stub function
 function error404 () {
@@ -10,13 +10,7 @@ function error404 () {
         <Def>
             <main>
                 <h1>404: PAGE NOT FOUND</h1>
-                <p>Oops, sorry, we can't find this page!</p>
-                <div>
-                    <img src='/images/kitten-500.jpg' alt='Kitten'/>
-                    <div>
-                        Photo from <a href='https://placekitten.com/500/500'>Place Kitten</a>
-                    </div>
-                </div>
+                <p id="errorPageText">Sorry, you can't find Pokemon over here. :&#40;</p>
             </main>
         </Def>
     )

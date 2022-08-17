@@ -12,6 +12,8 @@ require('dotenv').config()
 // Defines the view engine for JSX files
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+// allows access to public folder (such as for CSS)
+app.use(express.static('public'))
 
 // SEQUELIZE CONNECTION
 const sequelize = new Sequelize(process.env.PG_URI)
@@ -30,6 +32,11 @@ app.get('/', (req, res) => {
     //     message: 'Welcome to a Pokemon Mock Up'
     // })
     res.render('home')
+})
+
+// INSTRUCTIONS PAGE
+app.get('/instructions', (req, res) => {
+    res.render('instructions')
 })
 
 // ERROR 404 ROUTE

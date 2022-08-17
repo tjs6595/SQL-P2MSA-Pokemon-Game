@@ -1,6 +1,6 @@
 // DEPENDENCIES
 const React = require('react');
-const Def = require('./layouts/default');
+const Def = require('./default');
 
 function home(){
     return (
