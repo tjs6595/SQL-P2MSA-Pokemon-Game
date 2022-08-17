@@ -1,0 +1,16 @@
+// DEPENDENCIES
+const React = require('react');
+const Def = require('./layouts/default');
+
+function home(){
+    return (
+        <Def>
+            <main>
+                <h1>HOME</h1>
+            </main>
+        </Def>
+    )
+}
+
+// EXPORTS
+module.exports = home

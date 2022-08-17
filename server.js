@@ -9,6 +9,10 @@ require('dotenv').config()
 // app.use(express.json())
 // app.use(express.urlencoded({ extended: false }))
 
+// Defines the view engine for JSX files
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
 // SEQUELIZE CONNECTION
 const sequelize = new Sequelize(process.env.PG_URI)
 
@@ -22,11 +26,16 @@ try {
 
 // ROOT
 app.get('/', (req, res) => {
-    res.status(200).json({
-        message: 'Welcome to a Pokemon Mock Up'
-    })
+    // res.status(200).json({
+    //     message: 'Welcome to a Pokemon Mock Up'
+    // })
+    res.render('home')
 })
 
+// ERROR 404 ROUTE
+app.get('*', (req, res) => {
+    res.render('error404')
+})
 
 // CONTROLLERS 
 // const bandsController = require('./controllers/bands_controller')
