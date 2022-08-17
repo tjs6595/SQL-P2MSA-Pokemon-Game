@@ -1,0 +1,28 @@
+{
+  "name": "sql-p2msa-pokemon-game",
+  "version": "1.0.0",
+  "description": "This mock game is inspired by Pokemon. It is a demo version of what could be a longer game.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjs6595/SQL-P2MSA-Pokemon-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjs6595/SQL-P2MSA-Pokemon-Game/issues"
+  },
+  "homepage": "https://github.com/tjs6595/SQL-P2MSA-Pokemon-Game#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3"
+  }
+}
