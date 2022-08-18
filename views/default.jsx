@@ -21,10 +21,10 @@ function Def(html){
                 {/* NAV LINKS */}
                 <ul>
                     <li>
-                        <a href='/'> <i class="fa fa-gamepad" aria-hidden="true"></i> PokeGame</a>
+                        <a href='/'> <i className="fa fa-gamepad" aria-hidden="true"></i> PokeGame</a>
                     </li>
                     <li>
-                        <a href='/instructions'><i class="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>
+                        <a href='/instructions'><i className="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>
                     </li>
                     <li>
                         <a href='/play'>Play</a>
