@@ -16,14 +16,14 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 
 // SEQUELIZE CONNECTION
-const sequelize = new Sequelize(process.env.PG_URI)
+// const sequelize = new Sequelize(process.env.PG_URI)
 
-try {
-    sequelize.authenticate() 
-    console.log(`Connected with Sequelize at ${process.env.PG_URI}`) 
-} catch(err) {
-    console.log(`Unable to connect to PG: ${err}`) 
-}
+// try {
+//     sequelize.authenticate() 
+//     console.log(`Connected with Sequelize at ${process.env.PG_URI}`) 
+// } catch(err) {
+//     console.log(`Unable to connect to PG: ${err}`) 
+// }
 
 
 // ROOT
@@ -50,8 +50,9 @@ app.get('*', (req, res) => {
 })
 
 // CONTROLLERS 
-// const bandsController = require('./controllers/bands_controller')
-// app.use('/bands', bandsController)
+// MUST EDIT POKEMON TO BE DIFFERENT NAME
+const pokemonController = require('./controllers/pokemon_controller')
+app.use('/pokemon', pokemonController)
 
 // const eventsController = require('./controllers/events_controller')
 // app.use('/events', eventsController)

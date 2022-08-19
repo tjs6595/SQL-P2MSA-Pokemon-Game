@@ -11,48 +11,48 @@ module.exports = {
       },
       nickname: {
         allowNull: false,
-        type: STRING
+        type: Sequelize.STRING
       },
       level: {
         allowNull: false,
-        type: SMALLINT
+        type: Sequelize.SMALLINT
       },
       species_id: {
         allowNull: false,
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       type_1_id: {
         allowNull: false,
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       type_2_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       ability_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       hitpoints: {
         allowNull: false,
-        type: SMALLINT
+        type: Sequelize.SMALLINT
       },
       defense: {
         allowNull: false,
-        type: SMALLINT
+        type: Sequelize.SMALLINT
       },
       player_pokemon_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       move_1_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       move_2_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       move_3_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       },
       move_4_id: {
-        type: INTEGER
+        type: Sequelize.INTEGER
       }
     });
   },
