@@ -1,7 +1,8 @@
 // DEPENDENCIES
 const express = require('express')
 const app = express()
-const { Sequelize } = require('sequelize')
+const { Mongoose } = require('mongoose')
+//const { Sequelize } = require('sequelize')
 
 
 // CONFIGURATION / MIDDLEWARE
@@ -15,6 +16,11 @@ app.engine('jsx', require('express-react-views').createEngine())
 // allows access to public folder (such as for CSS)
 app.use(express.static('public'))
 
+//MONGOOSE CONNECTION
+// Mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}, 
+//     () => { console.log('connected to mongo: ', process.env.MONGO_URI) }
+//   )
+  
 // SEQUELIZE CONNECTION
 // const sequelize = new Sequelize(process.env.PG_URI)
 
