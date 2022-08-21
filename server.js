@@ -1,7 +1,11 @@
 // DEPENDENCIES
 const express = require('express')
 const app = express()
-const { Mongoose } = require('mongoose')
+// switched to "const mongoose" instead of "const { Mongoose }"" and made the 
+// lowercase for "mongoose" in the MONGOOSE CONNECTION code because that was the way
+// it was formatted in the acitivities. If anything goes weird with Mongoose,
+// switch it back.
+const mongoose = require('mongoose')
 //const { Sequelize } = require('sequelize')
 
 
@@ -15,11 +19,14 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 // allows access to public folder (such as for CSS)
 app.use(express.static('public'))
+// body parser for recieving data
+app.use(express.urlencoded({ extended: true }))
+
 
 //MONGOOSE CONNECTION
-// Mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}, 
-//     () => { console.log('connected to mongo: ', process.env.MONGO_URI) }
-//   )
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}, 
+    () => { console.log('connected to mongo: ', process.env.MONGO_URI) }
+  )
   
 // SEQUELIZE CONNECTION
 // const sequelize = new Sequelize(process.env.PG_URI)
@@ -30,6 +37,17 @@ app.use(express.static('public'))
 // } catch(err) {
 //     console.log(`Unable to connect to PG: ${err}`) 
 // }
+
+// CONTROLLERS 
+// MUST EDIT POKEMON TO BE DIFFERENT NAME
+app.use('/pokemon', require('./controllers/pokemon_controller'))
+app.use('/npcs', require('./controllers/npcs_controller'))
+
+// const eventsController = require('./controllers/events_controller')
+// app.use('/events', eventsController)
+
+// const stagesController = require('./controllers/stages_controller')
+// app.use('/stages', stagesController)
 
 
 // ROOT
@@ -54,17 +72,6 @@ app.get('/play', (req, res) => {
 app.get('*', (req, res) => {
     res.render('error404')
 })
-
-// CONTROLLERS 
-// MUST EDIT POKEMON TO BE DIFFERENT NAME
-const pokemonController = require('./controllers/pokemon_controller')
-app.use('/pokemon', pokemonController)
-
-// const eventsController = require('./controllers/events_controller')
-// app.use('/events', eventsController)
-
-// const stagesController = require('./controllers/stages_controller')
-// app.use('/stages', stagesController)
 
 
 // LISTEN

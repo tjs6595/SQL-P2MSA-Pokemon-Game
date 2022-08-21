@@ -1,33 +1,63 @@
 // DEPENDENCIES
 // create router and save it to pokemon variable
-const pokemon = require('express').Router()
-// require models folder as db
-// gives us access to all models at once
-const db = require('../sql_models')
-//const db = require('../models')
+const express = require('express')
+const methodOverride = require('method-override')
+const pokemon = express.Router()
+const Pokemon = require('../mongo_models/pokemon.js')
+// reference the models folder
+const db = require('../mongo_models')
 
-// EDIT THIS PART WITH ANY DATABASES NEEDED
-const { Pokemon } = db
 
-// destructure the Op class from Sequelize package 
-//const { Op } = require('sequelize')
+// MIDDLEWARE
+pokemon.use(methodOverride('_method'))
+
+
 
 // INDEX ROUTE
 // FIND ALL POKEMON
-pokemon.get('/test', async (req, res) => {
-    // // call findAll on Pokemon model and save it as variable
-    // try {
-    //     console.log("I'm here")
-    //     const foundPokemon = await Pokemon.findAll({
-    //         where: {
-    //             name: { [Op.like]: `%${req.query.name? req.query.name: ''}%`}
-    //         }
-    //     })
-    //     res.status(200).json(foundPokemon)
-    // // for catch, send back JSON error with status of 500
-    // } catch (error) {
-    //     res.status(500).json(error)
-    // }
+pokemon.get('/', async (req, res) => {
+    db.Pokemon.find()
+        .then((pokemon) => {
+            res.render('pokemon/index', { pokemon })
+        })
+        .catch(err => {
+            console.log(err)
+            res.render('error404')
+        })
+
+    // let pokemon = [    {
+    //     Nickname: 'Pokemon 1',
+    //     image: '',
+    //     level: 3,
+    //     species: 'Caterpie',
+    //     type_1: 'Bug',
+    //     type_2: '',
+    //     ability: 'Shield Dust',
+    //     hit_points: 8,
+    //     defense: 8,
+    //     player: '',
+    //     move_1: 'Tackle',
+    //     move_2: 'String Shot',
+    //     Move_3: '',
+    //     Move_4: ''        
+    // },
+    // {
+    //     Nickname: 'Pokemon 2',
+    //     image: '',
+    //     level: 4,
+    //     species: 'Pidgey',
+    //     type_1: 'Normal',
+    //     type_2: 'Flying',
+    //     ability: 'Keen Eye',
+    //     hit_points: 9,
+    //     defense: 9,
+    //     player: '',
+    //     move_1: 'Tackle',
+    //     move_2: '',
+    //     Move_3: '',
+    //     Move_4: ''    
+    // }]
+    // res.render('pokemon/index', { pokemon })
 })
 
 // EXPORT
