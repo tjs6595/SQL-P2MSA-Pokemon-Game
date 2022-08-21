@@ -8,8 +8,8 @@ const battleBackground = new Sprite({
   image: battleBackgroundImage
 })
 
-let draggle
-let emby
+let wormber
+let puffig
 let renderedSprites
 let battleAnimationId
 let queue
@@ -21,12 +21,12 @@ function initBattle() {
   document.querySelector('#playerHealthBar').style.width = '100%'
   document.querySelector('#attacksBox').replaceChildren()
 
-  draggle = new Monster(monsters.Draggle)
-  emby = new Monster(monsters.Emby)
-  renderedSprites = [draggle, emby]
+  wormber = new Monster(monsters.Wormber)
+  puffig = new Monster(monsters.Puffig)
+  renderedSprites = [wormber, puffig]
   queue = []
 
-  emby.attacks.forEach((attack) => {
+  puffig.attacks.forEach((attack) => {
     const button = document.createElement('button')
     button.innerHTML = attack.name
     document.querySelector('#attacksBox').append(button)
@@ -36,15 +36,15 @@ function initBattle() {
   document.querySelectorAll('button').forEach((button) => {
     button.addEventListener('click', (e) => {
       const selectedAttack = attacks[e.currentTarget.innerHTML]
-      emby.attack({
+      puffig.attack({
         attack: selectedAttack,
-        recipient: draggle,
+        recipient: wormber,
         renderedSprites
       })
 
-      if (draggle.health <= 0) {
+      if (wormber.health <= 0) {
         queue.push(() => {
-          draggle.faint()
+          wormber.faint()
         })
         queue.push(() => {
           // fade back to black
@@ -68,18 +68,18 @@ function initBattle() {
 
       // draggle or enemy attacks right here
       const randomAttack =
-        draggle.attacks[Math.floor(Math.random() * draggle.attacks.length)]
+        wormber.attacks[Math.floor(Math.random() * wormber.attacks.length)]
 
       queue.push(() => {
-        draggle.attack({
+        wormber.attack({
           attack: randomAttack,
-          recipient: emby,
+          recipient: puffig,
           renderedSprites
         })
 
-        if (emby.health <= 0) {
+        if (puffig.health <= 0) {
           queue.push(() => {
-            emby.faint()
+            puffig.faint()
           })
 
           queue.push(() => {

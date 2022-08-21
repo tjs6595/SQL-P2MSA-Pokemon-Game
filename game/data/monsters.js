@@ -1,27 +1,27 @@
 const monsters = {
-    Emby: {
+    Puffig: {
       position: {
         x: 280,
         y: 325
       },
       image: {
-        src: './img/embySprite.png'
+        src: './img/pokeSpritePuffig.png'
       },
       frames: {
         max: 4,
         hold: 30
       },
       animate: true,
-      name: 'Emby',
+      name: 'Puffig',
       attacks: [attacks.Tackle, attacks.Fireball]
     },
-    Draggle: {
+    Wormber: {
       position: {
         x: 800,
         y: 100
       },
       image: {
-        src: './img/draggleSprite.png'
+        src: './img/pokeSpriteWormber.png'
       },
       frames: {
         max: 4,
@@ -29,7 +29,7 @@ const monsters = {
       },
       animate: true,
       isEnemy: true,
-      name: 'Draggle',
+      name: 'Wormber',
       attacks: [attacks.Tackle, attacks.Fireball]
     }
   }
