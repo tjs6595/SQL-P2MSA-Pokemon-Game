@@ -4,11 +4,11 @@ body {
 }
 
 h1 {
-  color: #d8aba6;
+  color: #211f36;
 }
 
 h4 {
-  color: #241f1c;
+  color: #211f36;
 }
 
 main {
@@ -35,6 +35,7 @@ nav a {
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
+  text-align: justify;
 }
 
 nav a:hover {
@@ -42,7 +43,7 @@ nav a:hover {
 }
 
 .instructions {
-  text-align: left;
+  text-align: center;
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 20px;
@@ -61,7 +62,6 @@ footer {
   background-color: #f7e3b7;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 25px;
 }
 
 li {

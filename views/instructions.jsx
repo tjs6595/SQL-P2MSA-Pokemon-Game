@@ -17,19 +17,19 @@ function instructions(){
                             <li>S = down</li>
                             <li>D = right</li> 
                         </ul>
-                        <img src='views/img/tall_grass_instruct Small.jpeg' width='250' height='250' alt='Tall Grass'/>
-                        </p>
-                        <p>
-                            I may add some cropped screenshots or small gifs next to the controls
-                            for more visuals? I'll add more control when I see the other button options.
                         </p>
                     </div>
                     <h4>Battles</h4>
                     <div className="instructions">
                         <p>If you enter the tall grass, wild sprites may attack you!
-                            Be careful to keep your player in good health before entering the grass.
-                            (and then more info depending on what functions there are for battles)
+                            Be careful to keep your player in good health before entering the grass.</p>
+                            <img src="views/img/Image 8-21-22 at 12.44 PM Small.png" alt='Tall Grass'/>
+                     
+                        <p>
+                            Move around in the tall grass until you find a sprite.
                         </p>
+                            
+                        
                     </div>
 
                 </div>
