@@ -1,24 +1,22 @@
 body {
-    background-color: #C0AB91;
-    text-align: center;
-  }
+  background-color: #79a0c9;
+  text-align: center;
+}
 
 h1 {
-  color: #cd2715;
+  color: #d8aba6;
 }
 
 h4 {
-  color: #4F4843;
+  color: #241f1c;
 }
 
 main {
   margin-right: 20px;
   margin-left: 20px;
-  background-color: #F7E3B7;
+  background-color: #f7e3b7;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-radius: 25px;
-
 }
 
 nav ul {
@@ -32,16 +30,15 @@ nav li {
 }
 
 nav a {
-  color: #4F4843;
+  color: #4f4843;
   font-size: 1.5em;
   font-family: sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
   color: #cd2715;
-
 }
 
 .instructions {
@@ -61,7 +58,7 @@ footer {
   margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
-  background-color: #F7E3B7;
+  background-color: #f7e3b7;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 25px;

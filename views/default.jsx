@@ -21,7 +21,7 @@ function Def(html){
                 {/* NAV LINKS */}
                 <ul>
                     <li>
-                        <a href='/'> <i className="fa fa-gamepad" aria-hidden="true"></i> PokeGame</a>
+                        <a href='/'> <i className="fa fa-gamepad" aria-hidden="true"></i> Modemon</a>
                     </li>
                     <li>
                         <a href='/instructions'><i className="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>

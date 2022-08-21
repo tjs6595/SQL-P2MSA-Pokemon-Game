@@ -6,8 +6,7 @@ function home(){
     return (
         <Def>
             <main>
-                <h1>Pokemon-Style Game</h1>
-                <p>Game needs a new title before we get a cease and desist from Nintendo</p>
+                <h1>Modemon</h1>
             </main>
         </Def>
     )
