@@ -17,7 +17,7 @@ function instructions(){
                             <li>S = down</li>
                             <li>D = right</li> 
                         </ul>
-                        <img src='views/img/tall_grass_instruct.jpeg' width='250' height='250' alt='Tall Grass'/>
+                        <img src='views/img/tall_grass_instruct Small.jpeg' width='250' height='250' alt='Tall Grass'/>
                         </p>
                         <p>
                             I may add some cropped screenshots or small gifs next to the controls

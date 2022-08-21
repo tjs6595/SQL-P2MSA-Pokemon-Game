@@ -6,7 +6,7 @@ function home(){
     return (
         <Def>
             <main>
-                <h1>Modemon</h1>
+                <h1>Mockmon</h1>
             </main>
         </Def>
     )
