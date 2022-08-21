@@ -21,9 +21,9 @@ function instructions(){
                     </div>
                     <h4>Battles</h4>
                     <div className="instructions">
-                        <p>If you enter the tall grass, wild sprites may attack you!
+                        <p>If you enter the tall grass,    wild sprites may attack you!
                             Be careful to keep your player in good health before entering the grass.</p>
-                            <img src="views/img/Image 8-21-22 at 12.44 PM Small.png" alt='Tall Grass'/>
+                            <img src="views/img_instruction/tall_grass_screenshot.png" alt='Tall Grass'/>
                      
                         <p>
                             Move around in the tall grass until you find a sprite.
