@@ -29,11 +29,14 @@ pokemon.get('/', async (req, res) => {
 // CREATE NEW MOCKMON
 pokemon.post('/', (req, res) => {
     console.log(req.body)
-    if(!req.body.image){
-        req.body.image = 'http://placekitten.com/400/400'
-    }
-    // if something isn't working here, check Rest-RANT Part 5
-    res.redirect('/mockmon')
+    db.Pokemon.create(req.body)
+    .then(() => {
+      res.redirect('/mockmon')
+    })
+    .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+    })
   })
 
 // NEW MOCKMON PAGE
@@ -42,19 +45,55 @@ pokemon.get('/new', (req, res) => {
     res.render('mockmon/new')
   })
 
-  // DELETE PLACE
+// SHOW SPECIFIC MOCKMON
+pokemon.get('/:id', (req, res) => {
+  db.Pokemon.findById(req.params.id)
+  .then( pokemon => {
+      res.render('mockmon/show', { pokemon })
+  })
+  .catch( err => {
+    console.log('err', err)
+    res.render('error404')
+  })
+})
+
+// EDITS MOCKMON BY ID
+pokemon.put('/:id', (req, res) => {
+  // res.send('PUT /places/:id stub')
+  db.Pokemon.findByIdAndUpdate(req.params.id, req.body)
+  .then(() => {
+    res.redirect(`/mockmon/${req.params.id}`)
+  })
+  .catch(err => {
+    console.log('err', err)
+    res.render('error404')
+  })
+})
+
+  // DELETE MOCKMON
 pokemon.delete('/:id', (req, res) => {
-    res.send('DELETE /places/:id stub')
-    // db.Pokemon.findByIdAndDelete(req.params.id)
-    // .then(mockmon => {
-    //     res.redirect('/mockmon')
-    // })
-    // .catch(err => {
-    //     console.log('err', err)
-    //     res.render('error404')
-    // })
+    // res.send('DELETE /places/:id stub')
+    db.Pokemon.findByIdAndDelete(req.params.id)
+    .then(pokemon => {
+        res.redirect('/mockmon')
+    })
+    .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+    })
   })
 
+  // EDIT MOCKMON ROUTE
+pokemon.get('/:id/edit', (req, res) => {
+  //look up place data by ID and send it to edit.jsx view
+  db.Pokemon.findById(req.params.id)
+  .then(pokemon => {
+    res.render('mockmon/edit', { pokemon })
+  })
+  .catch(err => {
+    res.render('error404', err)
+  })
+})
 
 // EXPORT
 module.exports = pokemon
