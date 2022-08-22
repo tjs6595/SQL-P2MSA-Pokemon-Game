@@ -6,7 +6,7 @@ db.Pokemon.create([
     {
         nickname: 'Pokemon 1',
         image: 'http://placekitten.com/350/350',
-        sprite: './public/css/images/wormber-movement.gif',
+        sprite: '../css/images/wormber-movement.gif',
         level: 3,
         species: 'Caterpie',
         type_1: 'Bug',
