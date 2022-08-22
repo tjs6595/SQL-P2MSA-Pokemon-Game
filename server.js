@@ -1,6 +1,7 @@
 // DEPENDENCIES
 const express = require('express')
 const app = express()
+const methodOverride = require('method-override')
 // switched to "const mongoose" instead of "const { Mongoose }"" and made the 
 // lowercase for "mongoose" in the MONGOOSE CONNECTION code because that was the way
 // it was formatted in the acitivities. If anything goes weird with Mongoose,
@@ -21,6 +22,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 // body parser for recieving data
 app.use(express.urlencoded({ extended: true }))
+app.use(methodOverride('_method'))
 
 
 //MONGOOSE CONNECTION
