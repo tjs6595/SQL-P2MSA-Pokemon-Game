@@ -1,23 +1,4 @@
 # SQL-P2MSA-Pokemon-Game
-
-<<<<<<< HEAD
-Super excited!!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Test sentence from Mallory!
 =======
 ## Inspiration
 This mock game is inspired by Pokemon. It is a demo version of what could be a longer game.
@@ -26,11 +7,14 @@ This mock game is inspired by Pokemon. It is a demo version of what could be a l
 
 
 ## Technologies Used to Build the Application
+*MongoDB - used for datbase
+*HTML - used for the game and React view pages
+*CSS - used for styling React view pages
+*JavaScript - used for the game mainly
+*React - used for the website pages
 
 
 ## Outstanding Bugs
 
 
 ## Unfinished Functionality
-
->>>>>>> 32441c5bb1b846f03048de9e4d1675d712a7b810

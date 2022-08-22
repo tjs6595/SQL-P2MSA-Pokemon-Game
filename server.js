@@ -40,7 +40,7 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
 
 // CONTROLLERS 
 // MUST EDIT POKEMON TO BE DIFFERENT NAME
-app.use('/pokemon', require('./controllers/pokemon_controller'))
+app.use('/mockmon', require('./controllers/pokemon_controller'))
 app.use('/npcs', require('./controllers/npcs_controller'))
 
 // const eventsController = require('./controllers/events_controller')
