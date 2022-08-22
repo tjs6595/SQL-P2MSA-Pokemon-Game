@@ -29,11 +29,14 @@ pokemon.get('/', async (req, res) => {
 // CREATE NEW MOCKMON
 pokemon.post('/', (req, res) => {
     console.log(req.body)
-    if(!req.body.image){
-        req.body.image = 'http://placekitten.com/400/400'
-    }
-    // if something isn't working here, check Rest-RANT Part 5
-    res.redirect('/mockmon')
+    db.Pokemon.create(req.body)
+    .then(() => {
+      res.redirect('/mockmon')
+    })
+    .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+    })
   })
 
 // NEW MOCKMON PAGE
@@ -56,15 +59,15 @@ pokemon.get('/:id', (req, res) => {
 
 // EDITS MOCKMON BY ID
 pokemon.put('/:id', (req, res) => {
-  res.send('PUT /places/:id stub')
-  // db.Place.findByIdAndUpdate(req.params.id, req.body)
-  // .then(() => {
-  //   res.redirect(`/places/${req.params.id}`)
-  // })
-  // .catch(err => {
-  //   console.log('err', err)
-  //   res.render('error404')
-  // })
+  // res.send('PUT /places/:id stub')
+  db.Pokemon.findByIdAndUpdate(req.params.id, req.body)
+  .then(() => {
+    res.redirect(`/mockmon/${req.params.id}`)
+  })
+  .catch(err => {
+    console.log('err', err)
+    res.render('error404')
+  })
 })
 
   // DELETE MOCKMON
@@ -82,7 +85,7 @@ pokemon.delete('/:id', (req, res) => {
 
   // EDIT MOCKMON ROUTE
 pokemon.get('/:id/edit', (req, res) => {
-  // //look up place data by ID and send it to edit.jsx view
+  //look up place data by ID and send it to edit.jsx view
   db.Pokemon.findById(req.params.id)
   .then(pokemon => {
     res.render('mockmon/edit', { pokemon })

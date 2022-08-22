@@ -43,7 +43,7 @@ function Def(html){
             </body>
             <footer>
                 <p>Milestone Project 2: MERN Stack Application</p>
-                <ul><b><u>Game Creators</u></b>
+                <ul><b><u>Project Creators</u></b>
                     <li>Rebecca Coburn,</li> 
                     <li>Mallory Fellows, </li>
                     <li>Jarrod Helmers, and </li>
