@@ -8,26 +8,27 @@ function Def(html){
     return (
         <html>
             <head>
-                <title>Pokemon-Style Game</title>
+                <title>Mockmon</title>
                 {/* Bootstrap CDN link */}
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"/>
                 
                 {/* Main CSS */}
                 <link rel='stylesheet' href='/css/style.css'/>
                 <script src="https://use.fontawesome.com/cc7c57117a.js"></script>
+                <script src="https://kit.fontawesome.com/c5973c0bc5.js" crossorigin="anonymous"></script>
             </head>
             {/* NAVBAR */}
             <nav>
                 {/* NAV LINKS */}
                 <ul>
                     <li>
-                        <a href='/'> <i className="fa fa-gamepad" aria-hidden="true"></i> PokeGame</a>
+                        <a href='/'> <i className="fa fa-gamepad" aria-hidden="true"></i> Mockmon</a>
                     </li>
                     <li>
                         <a href='/instructions'><i className="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>
                     </li>
                     <li>
-                        <a href='/play'>Play</a>
+                        <a href='/play'><i class="fa-solid fa-fire"></i>Play</a>
                     </li>
                     <li>
                         <a href='/mockmon'>Mockdex</a>

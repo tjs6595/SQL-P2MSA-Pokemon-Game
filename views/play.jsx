@@ -10,7 +10,7 @@ function play(){
     return (
         <Def>
             <main>
-                <p>Game window goes here?</p>
+                <p>Ready to play Mockmon?</p>
                 <div dangerouslySetInnerHTML={{ __html: "<iframe src='http://localhost:8080/' />"}} />
             </main>
         </Def>
