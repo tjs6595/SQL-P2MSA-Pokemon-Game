@@ -72,15 +72,15 @@ pokemon.put('/:id', (req, res) => {
 
   // DELETE MOCKMON
 pokemon.delete('/:id', (req, res) => {
-    res.send('DELETE /places/:id stub')
-    // db.Pokemon.findByIdAndDelete(req.params.id)
-    // .then(mockmon => {
-    //     res.redirect('/mockmon')
-    // })
-    // .catch(err => {
-    //     console.log('err', err)
-    //     res.render('error404')
-    // })
+    // res.send('DELETE /places/:id stub')
+    db.Pokemon.findByIdAndDelete(req.params.id)
+    .then(pokemon => {
+        res.redirect('/mockmon')
+    })
+    .catch(err => {
+        console.log('err', err)
+        res.render('error404')
+    })
   })
 
   // EDIT MOCKMON ROUTE

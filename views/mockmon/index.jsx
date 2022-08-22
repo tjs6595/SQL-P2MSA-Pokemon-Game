@@ -11,7 +11,7 @@ function index(data) {
     //formats data into HTML so page can display it
     let pokeFormatted = data.pokemon.map((pokemon) => {
         return (
-            <div>
+            <div className='col-sm-3'>
                 <h3><a href={`/mockmon/${pokemon.id}`}>
                     {pokemon.species}
                 </a></h3>
