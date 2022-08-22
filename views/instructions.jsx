@@ -12,17 +12,18 @@ function instructions(){
                     <div className="instructions">
                     <p>Player movement keys:
                         <ul>   
-                            <li>A = left</li> 
-                            <li>W = up</li>
-                            <li>S = down</li>
-                            <li>D = right</li> 
+                            <li>A = <i class="fa-solid fa-arrow-left"></i></li> 
+                            <li>W = <i class="fa-solid fa-arrow-up"></i></li>
+                            <li>S = <i class="fa-solid fa-arrow-down"></i></li>
+                            <li>D = <i class="fa-solid fa-arrow-right"></i></li> 
                         </ul>
                         </p>
                     </div>
                     <h4>Battles</h4>
                     <div className="instructions">
                         <p>If you enter the tall grass,    wild sprites may attack you!
-                            Be careful to keep your player in good health before entering the grass.</p>
+                            Be careful to keep your player in good health  before entering the grass.</p>
+                            
                             <img src="views/img_instruction/tall_grass_screenshot.png" alt='Tall Grass'/>
                      
                         <p>

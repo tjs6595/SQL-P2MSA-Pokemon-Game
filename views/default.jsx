@@ -15,6 +15,7 @@ function Def(html){
                 {/* Main CSS */}
                 <link rel='stylesheet' href='/css/style.css'/>
                 <script src="https://use.fontawesome.com/cc7c57117a.js"></script>
+                <script src="https://kit.fontawesome.com/c5973c0bc5.js" crossorigin="anonymous"></script>
             </head>
             {/* NAVBAR */}
             <nav>
@@ -27,7 +28,7 @@ function Def(html){
                         <a href='/instructions'><i className="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>
                     </li>
                     <li>
-                        <a href='/play'>Play</a>
+                        <a href='/play'><i class="fa-solid fa-fire"></i>Play</a>
                     </li>
                 </ul>
             </nav>
