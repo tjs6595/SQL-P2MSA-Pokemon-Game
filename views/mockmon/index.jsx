@@ -13,20 +13,22 @@ function index(data) {
         return (
             <div>
                 <div>
-                    <h3>{pokemon.nickname}</h3>
-                    <h4>{pokemon.species}</h4>
+                    <h3>{pokemon.species}</h3>
+                    <img src={pokemon.image} alt={pokemon.name}></img>
+                    <img src={pokemon.sprite} alt={pokemon.sprite}></img>
                     <p>Lv. {pokemon.level}</p>
                     <ul>Type(s): 
                     <li>{pokemon.type_1}</li> 
                     <li>{pokemon.type_2}</li></ul>
                     <p>Ability: {pokemon.ability}</p>
+                    <p>Entry: {pokemon.dex_entry}</p>
                     <p>Hit Points: {pokemon.hit_points}</p>
                     <p>Defense: {pokemon.defense}</p>
                     <ul>Move(s)
                         <li>{pokemon.move_1}</li>
                         <li>{pokemon.move_2}</li>
-                        <li>{pokemon.Move_3}</li>
-                        <li>{pokemon.Move_4}</li>
+                        <li>{pokemon.move_3}</li>
+                        <li>{pokemon.move_4}</li>
                     </ul>
                 </div>
             </div>
@@ -37,7 +39,7 @@ function index(data) {
     // Wrapping in Def component
     <Def>
         <main>
-            <h1>Pokemon List</h1>  
+            <h1>Mockdex</h1>  
             {pokeFormatted}        
         </main>
     </Def>
