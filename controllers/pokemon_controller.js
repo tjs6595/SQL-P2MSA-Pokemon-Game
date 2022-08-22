@@ -80,18 +80,16 @@ pokemon.delete('/:id', (req, res) => {
     // })
   })
 
-  // EDIT PLACE ROUTE
+  // EDIT MOCKMON ROUTE
 pokemon.get('/:id/edit', (req, res) => {
-  // keeping that for future reference
-  res.send('GET edit form stub')
   // //look up place data by ID and send it to edit.jsx view
-  // db.Place.findById(req.params.id)
-  // .then(place => {
-  //   res.render('places/edit', { place })
-  // })
-  // .catch(err => {
-  //   res.render('error404')
-  // })
+  db.Pokemon.findById(req.params.id)
+  .then(pokemon => {
+    res.render('mockmon/edit', { pokemon })
+  })
+  .catch(err => {
+    res.render('error404', err)
+  })
 })
 
 // EXPORT
