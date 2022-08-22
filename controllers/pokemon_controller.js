@@ -14,7 +14,7 @@ pokemon.use(methodOverride('_method'))
 
 
 // INDEX ROUTE
-// FIND ALL POKEMON
+// SHOW ALL POKEMON
 pokemon.get('/', async (req, res) => {
     db.Pokemon.find()
         .then((pokemon) => {
@@ -25,6 +25,12 @@ pokemon.get('/', async (req, res) => {
             res.render('error404')
         })
 })
+
+// NEW MOCKMON PAGE
+// must be above get by ID route
+pokemon.get('/new', (req, res) => {
+    res.render('mockmon/new')
+  })
 
 // // CREATE MOCKMON
 // pokemon.post('/', (req, res) => {
