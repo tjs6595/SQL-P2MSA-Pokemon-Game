@@ -10,7 +10,7 @@ function error404 () {
         <Def>
             <main>
                 <h1>404: PAGE NOT FOUND</h1>
-                <p id="errorPageText">Sorry, you can't find Pokemon over here. :&#40;</p>
+                <p id="errorPageText">Sorry, you can't find sprites over here. :&#40;</p>
             </main>
         </Def>
     )

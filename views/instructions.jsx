@@ -10,17 +10,27 @@ function instructions(){
                 <div>
                     <h4>Controls</h4>
                     <div className="instructions">
-                        <p>Press AWSD keys to move the player.
-                            I may add some cropped screenshots or small gifs next to the controls
-                            for more visuals? I'll add more control when I see the other button options.
+                    <p>Player movement keys:
+                        <ul>   
+                            <li>A = <i class="fa-solid fa-arrow-left"></i></li> 
+                            <li>W = <i class="fa-solid fa-arrow-up"></i></li>
+                            <li>S = <i class="fa-solid fa-arrow-down"></i></li>
+                            <li>D = <i class="fa-solid fa-arrow-right"></i></li> 
+                        </ul>
                         </p>
                     </div>
                     <h4>Battles</h4>
                     <div className="instructions">
-                        <p>If you enter the tall grass, wild Pokemon may attack you!
-                            Be careful to keep your Pokemon in good health before entering the grass.
-                            (and then more info depending on what functions there are for battles)
+                        <p>If you enter the tall grass,    wild sprites may attack you!
+                            Be careful to keep your player in good health  before entering the grass.</p>
+                            
+                            <img src="views/img_instruction/tall_grass_screenshot.png" alt='Tall Grass'/>
+                     
+                        <p>
+                            Move around in the tall grass until you find a sprite.
                         </p>
+                            
+                        
                     </div>
 
                 </div>
