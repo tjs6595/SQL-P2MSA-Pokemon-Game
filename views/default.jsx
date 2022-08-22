@@ -30,6 +30,12 @@ function Def(html){
                     <li>
                         <a href='/play'><i class="fa-solid fa-fire"></i>Play</a>
                     </li>
+                    <li>
+                        <a href='/mockmon'>Mockdex</a>
+                    </li>
+                    <li>
+                        <a href='/mockmon/new'>Add New Mockmon</a>
+                    </li>
                 </ul>
             </nav>
             <body>
