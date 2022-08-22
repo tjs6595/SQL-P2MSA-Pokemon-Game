@@ -34,12 +34,12 @@ function show (data) {
                 <div>
                     {/* EDIT BUTTON */}
 
-                    <a href={`/places/${data.pokemon.id}/edit`} className='btn btn-warning'>
+                    <a href={`/mockmon/${data.pokemon.id}/edit`} className='btn btn-warning'>
                         Edit
                     </a>
 
                     {/* DELETE BUTTON */}
-                    <form method='POST' action={`/places/${data.pokemon.id}?_method=DELETE`}>
+                    <form method='POST' action={`/mockmon/${data.pokemon.id}?_method=DELETE`}>
                         <button type='submit' className='btn btn-danger'>
                             Delete
                         </button>
