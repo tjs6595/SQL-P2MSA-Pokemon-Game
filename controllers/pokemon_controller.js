@@ -29,13 +29,30 @@ pokemon.get('/', async (req, res) => {
 // CREATE NEW MOCKMON
 pokemon.post('/', (req, res) => {
     console.log(req.body)
-    res.send('/POST mockmon')
+    if(!req.body.image){
+        req.body.image = 'http://placekitten.com/400/400'
+    }
+    // if something isn't working here, check Rest-RANT Part 5
+    res.redirect('/mockmon')
   })
 
 // NEW MOCKMON PAGE
 // must be above get by ID route
 pokemon.get('/new', (req, res) => {
     res.render('mockmon/new')
+  })
+
+  // DELETE PLACE
+pokemon.delete('/:id', (req, res) => {
+    res.send('DELETE /places/:id stub')
+    // db.Pokemon.findByIdAndDelete(req.params.id)
+    // .then(mockmon => {
+    //     res.redirect('/mockmon')
+    // })
+    // .catch(err => {
+    //     console.log('err', err)
+    //     res.render('error404')
+    // })
   })
 
 
