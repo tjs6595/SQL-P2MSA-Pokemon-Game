@@ -42,7 +42,19 @@ pokemon.get('/new', (req, res) => {
     res.render('mockmon/new')
   })
 
-  // DELETE PLACE
+// SHOW SPECIFIC MOCKMON
+pokemon.get('/:id', (req, res) => {
+  db.Pokemon.findById(req.params.id)
+  .then( pokemon => {
+      res.render('mockmon/show', { pokemon })
+  })
+  .catch( err => {
+    console.log('err', err)
+    res.render('error404')
+  })
+})
+
+  // DELETE MOCKMON
 pokemon.delete('/:id', (req, res) => {
     res.send('DELETE /places/:id stub')
     // db.Pokemon.findByIdAndDelete(req.params.id)
