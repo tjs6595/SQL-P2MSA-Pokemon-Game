@@ -31,10 +31,10 @@ function Def(html){
                         <a href='/play'><i className="fa-solid fa-fire" aria-hidden="true"></i>Play</a>
                     </li>
                     <li>
-                        <a href='/mockmon'>Mockdex</a>
+                        <a href='/mockmon'><i className="fa-solid fa-dragon" aria-hidden="true"></i> Mockdex</a>
                     </li>
                     <li>
-                        <a href='/mockmon/new'>Add New Mockmon</a>
+                        <a href='/mockmon/new'><i className="fa-regular fa-address-book" aria-hidden="true"></i> Add New Mockmon</a>
                     </li>
                 </ul>
             </nav>
