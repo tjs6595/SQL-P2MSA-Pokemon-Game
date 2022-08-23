@@ -6,8 +6,8 @@ function home(){
     return (
         <Def>
             <main>
-                <img src="https://placekitten.com/800/500" alt='Mockmon'/>
-                <h1 style={{fontSize: '100px', fontWeight:'Bold', fontFamily: 'sans-serif'}}>Mockmon</h1>
+                <h1 style={{fontSize: '100px', fontWeight:'Bold', fontFamily: 'sans-serif', fontStyle:'italic'}}>Mockmon</h1>
+                <img src={'./images/wormber-movement.gif'} alt="wormber" width="300" height="300"/>
             </main>
         </Def>
     )

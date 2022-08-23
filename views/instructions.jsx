@@ -1,6 +1,7 @@
 // DEPENDENCIES
 const React = require('react');
 const Def = require('./default');
+// import tall_grass from './images/tall_grass_screenshot.png'
 
 function instructions(){
     return (
@@ -24,7 +25,7 @@ function instructions(){
                         <p>If you enter the tall grass,    wild Mockmon may attack you!
                             Be careful to keep your player in good health  before entering the grass.</p>
                             
-                            <img src="views/img_instruction/tall_grass_screenshot.png" alt='Tall Grass'/>
+                            <img src={'./images/tall_grass_screenshot.png'} alt="Tall Grass"/>
                      
                         <p>
                             Move around in the tall grass until you find a Mockmon.

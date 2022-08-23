@@ -28,7 +28,7 @@ function Def(html){
                         <a href='/instructions'><i className="fa fa-question-circle" aria-hidden="true"></i> Instructions</a>
                     </li>
                     <li>
-                        <a href='/play'><i className="fa-solid fa-fire" aria-hidden="true"></i>Play</a>
+                        <a href='/play'><i className="fa-solid fa-fire" aria-hidden="true"></i> Play</a>
                     </li>
                     <li>
                         <a href='/mockmon'><i className="fa-solid fa-dragon" aria-hidden="true"></i> Mockdex</a>
