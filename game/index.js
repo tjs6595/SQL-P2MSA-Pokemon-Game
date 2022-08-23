@@ -1,3 +1,9 @@
+// Game Idea was made with Help by Chris Courses
+// Video can be found here: https://www.youtube.com/watch?v=yP5DKzriqXA
+
+// In no way are we taking credit for the game, game was used for educational purposes.
+// We will not profit or take credit for the game.
+
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
