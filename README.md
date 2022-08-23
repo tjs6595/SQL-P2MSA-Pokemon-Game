@@ -24,19 +24,22 @@ Tall Grass
 Move around in the tall grass until you find a Mockmon.
 
 ## Technologies Used to Build the Application
-*MongoDB - used for datbase
-*HTML - used for the game and React view pages
-*CSS - used for styling React view pages
-*JavaScript - used for the game mainly
-*React - used for the website pages
+* MongoDB - used for datbase
+* HTML - used for the game and React view pages
+* CSS - used for styling React view pages
+* JavaScript - used for the game mainly
+* React - used for the website pages
 
 
 ## Outstanding Bugs
-None currently
+- There's an issue with the worm sprite showing correctly in the home page, and index page, but it is broken on the Wormber show page.
+- Keep getting this warning: "Warning: Each child in a list should have a unique "key" prop."
 
 ## Unfinished Functionality
 Here is a list of items that are unfinished:
---Tying the game into the database.
---Further styling changes.
---More fields in the database (more character stats)
---Adding more user experience items like pictures, more colors, etc.
+- Tying the game into the database.
+- Further styling changes.
+- More fields in the database (more character stats)
+- Adding more user experience items like pictures, more colors, etc.
+- Creating more Mockmon sprites (only made Womrber and Puffig)
+- The form needs more form validation, and we were hoping to make custom error messages too.

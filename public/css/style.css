@@ -76,3 +76,24 @@ image {
   height: 100px;
   width: 100px;
 }
+
+/* Followed this tutorial to figure out
+how to get stripes for the notebook page effect
+https://css-tricks.com/stripes-css/ */
+.stripeTest {
+  background: linear-gradient(
+  to bottom,
+  #f5f8e7,
+  #f5f8e7 97%,
+  #92b7df 40%,
+  #92b7df
+  
+);
+background-size: 100% 40px;
+
+}
+
+.mockImg {
+  border: solid;
+  border-radius: 45%;
+}

@@ -89,7 +89,7 @@ function newForm (data) {
                         <input className='form-control' id='ability' 
                         name='ability'
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"
+                        
                         />
                     </div>
 
@@ -108,7 +108,6 @@ function newForm (data) {
                         <input className='form-control' id='move_1' 
                         name='move_1' 
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"
                         />
                     </div>
                     {/* Move 2 */}
@@ -117,7 +116,6 @@ function newForm (data) {
                         <input className='form-control' id='move_2' 
                         name='move_2' 
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"
                         />
                     </div>
                     {/* Move 3 */}
@@ -126,7 +124,6 @@ function newForm (data) {
                         <input className='form-control' id='move_3' 
                         name='move_3' 
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"
                         />
                     </div>
                     {/* Move 4 */}
@@ -135,7 +132,6 @@ function newForm (data) {
                         <input className='form-control' id='move_4' 
                         name='move_4' 
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"
                         />
 
                 </div>

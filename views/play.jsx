@@ -11,7 +11,20 @@ function play(){
         <Def>
             <main>
                 <p>Ready to play Mockmon?</p>
+                <div>
+                    <p>
+                        Game Idea was made with Help by Chris Courses. Video can be found: <a href='https://www.youtube.com/watch?v=yP5DKzriqXA'>here.</a>
+                    </p>
+                    <p>
+                        In no way are we taking credit for the game, game was used for educational purposes.
+                        We will not profit or take credit for the game.
+                    </p>
+                    
+                </div>
                 <div dangerouslySetInnerHTML={{ __html: "<iframe src='http://localhost:8080/' />"}} />
+
+
+            
             </main>
         </Def>
     )

@@ -11,11 +11,11 @@ function index(data) {
     //formats data into HTML so page can display it
     let pokeFormatted = data.pokemon.map((pokemon) => {
         return (
-            <div className='col-sm-3'>
+            <div className='col-sm-4' style={{margin: '15px 0px 15px 0px '}}>
                 <h3><a href={`/mockmon/${pokemon.id}`}>
                     {pokemon.species}
                 </a></h3>
-                <img src={pokemon.image} alt={pokemon.name}></img>
+                <img className='mockImg' src={pokemon.image} alt={pokemon.name}></img>
                 <img src={pokemon.sprite} alt={pokemon.sprite}></img>
             </div>
         )
