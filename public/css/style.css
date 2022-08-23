@@ -15,8 +15,7 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: #f7e3b7;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px
 }
 
 nav ul {
