@@ -11,8 +11,6 @@ function show (data) {
                     {data.pokemon.species}
                 </a></h3>
                 <img src={data.pokemon.image} alt={data.pokemon.name}></img>
-                {/* commented out because it keeps breaking */}
-                {/* <img src={data.pokemon.sprite} alt={data.pokemon.sprite}></img> */}
             </div>
             <div className='stripeTest' style={{display: 'inline-block', textAlign: 'left', 
             margin: '10px', padding: '10px',
@@ -32,6 +30,9 @@ function show (data) {
                     <p>{data.pokemon.move_3}</p>
                     <p>{data.pokemon.move_4}</p>
                 </p>
+            </div>
+            <div style={{margin: '15px'}}>
+            <img src={data.pokemon.sprite} alt={data.pokemon.sprite}></img>
             </div>
 
             {/* BUTTONS */}

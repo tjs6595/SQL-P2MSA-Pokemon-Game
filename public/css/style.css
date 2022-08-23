@@ -92,3 +92,8 @@ https://css-tricks.com/stripes-css/ */
 background-size: 100% 40px;
 
 }
+
+.mockImg {
+  border: solid;
+  border-radius: 45%;
+}
