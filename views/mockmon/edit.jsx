@@ -91,7 +91,7 @@ function editForm (data) {
                         <input className='form-control' id='ability' name='ability'  
                         defaultValue={data.pokemon.ability}
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"  />
+                         />
                     </div>
 
                     {/* DEX ENTRY*/}

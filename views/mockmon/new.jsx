@@ -89,7 +89,7 @@ function newForm (data) {
                         <input className='form-control' id='ability' 
                         name='ability'
                         maxLength='20' type='text'
-                        pattern="[a-zA-Z]+"
+                        
                         />
                     </div>
 

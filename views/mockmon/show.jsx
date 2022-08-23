@@ -11,30 +11,34 @@ function show (data) {
                     {data.pokemon.species}
                 </a></h3>
                 <img src={data.pokemon.image} alt={data.pokemon.name}></img>
-                <img src={data.pokemon.sprite} alt={data.pokemon.sprite}></img>
+                {/* commented out because it keeps breaking */}
+                {/* <img src={data.pokemon.sprite} alt={data.pokemon.sprite}></img> */}
             </div>
-            <div style={{display: 'inline-block', textAlign: 'center', backgroundColor: "#79a0c9", width:"300px"}}>
+            <div className='stripeTest' style={{display: 'inline-block', textAlign: 'left', 
+            margin: '10px', padding: '10px',
+            borderLeftStyle: 'solid', borderWidth: '5px', borderColor: '#c24242', boxShadow: 'rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px',
+            backgroundColor: "#79a0c9", width:"300px"}}>
                 <p><span style={{fontWeight:'Bold'}}>Lv. </span>{data.pokemon.level}</p>
-                <ul><span style={{fontWeight:'Bold'}}>Type(s): </span>
-                <li>{data.pokemon.type_1}</li> 
-                <li>{data.pokemon.type_2}</li></ul>
+                <p><span style={{fontWeight:'Bold'}}>Type(s):</span></p>
+                <p>{data.pokemon.type_1}</p> 
+                <p>{data.pokemon.type_2} </p>
                 <p><span style={{fontWeight:'Bold'}}>Ability: </span>{data.pokemon.ability}</p>
                 <p><span style={{fontWeight:'Bold'}}>Entry: </span>{data.pokemon.dex_entry}</p>
                 <p><span style={{fontWeight:'Bold'}}>Hit Points: </span>{data.pokemon.hit_points}</p>
                 <p><span style={{fontWeight:'Bold'}}>Defense: </span>{data.pokemon.defense}</p>
-                <ul><span style={{fontWeight:'Bold'}}>Move(s)</span>
-                    <li>{data.pokemon.move_1}</li>
-                    <li>{data.pokemon.move_2}</li>
-                    <li>{data.pokemon.move_3}</li>
-                    <li>{data.pokemon.move_4}</li>
-                </ul>
+                <p><span style={{fontWeight:'Bold'}}>Move(s): </span>
+                    <p>{data.pokemon.move_1}</p>
+                    <p>{data.pokemon.move_2}</p>
+                    <p>{data.pokemon.move_3}</p>
+                    <p>{data.pokemon.move_4}</p>
+                </p>
             </div>
 
             {/* BUTTONS */}
                 <div>
-                    <div style={{display: 'inline-flex'}}>
+                    <div style={{display: 'inline-flex',}}>
                     {/* EDIT BUTTON */}
-                    <a href={`/mockmon/${data.pokemon.id}/edit`} className='btn btn-success btn-lg'>
+                    <a href={`/mockmon/${data.pokemon.id}/edit`} className='btn btn-success btn-lg' style={{marginRight: '15px'}}>
                         Edit
                     </a>
 
