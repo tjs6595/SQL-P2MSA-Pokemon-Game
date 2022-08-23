@@ -30,14 +30,54 @@ function newForm (data) {
                     {/* MOCKMON TYPE 1 */}
                     <div className='form-group col-sm-4'>
                         <label htmlFor='type_1'>Type 1</label>
-                        <input className='form-control' id='type_1' name='type_1' required />
+                        <select className='form-control' id='type_1' name='type_1' required >
+                            <option value="none" selected disabled hidden>Select a Type</option>
+                            <option value='bug' >Bug</option>
+                            <option value='dark' >Dark</option>
+                            <option value='dragon' >Dragon</option>
+                            <option value='electric' >Electric</option>
+                            <option value='fight' >Fight</option>
+                            <option value='fire' >Fire</option>
+                            <option value='flying' >Flying</option>
+                            <option value='ghost' >Ghost</option>
+                            <option value='grass' >Grass</option>
+                            <option value='ground' >Ground</option>
+                            <option value='ice' >Ice</option>
+                            <option value='normal'>Normal</option>
+                            <option value='poison' >Poison</option>
+                            <option value='psychic' >Psychic</option>
+                            <option value='rock' >Rock</option>
+                            <option value='steel' >Steel</option>
+                            <option value='water' >Water</option>
+                        </select>
                     </div>
 
                     
                     {/* MOCKMON TYPE 2 */}
                     <div className='form-group col-sm-4'>
                         <label htmlFor='type_2'>Type 2 (optional)</label>
-                        <input className='form-control' id='type_2' name='type_2' />
+                        <select className='form-control' id='type_2' name='type_2' > 
+                            <option value=''></option>
+                            <option value='bug' >Bug</option>
+                            <option value='dark' >Dark</option>
+                            <option value='dragon' >Dragon</option>
+                            <option value='electric' >Electric</option>
+                            <option value='fight' >Fight</option>
+                            <option value='fire' >Fire</option>
+                            <option value='flying' >Flying</option>
+                            <option value='ghost' >Ghost</option>
+                            <option value='grass' >Grass</option>
+                            <option value='ground' >Ground</option>
+                            <option value='ice' >Ice</option>
+                            <option value='normal' >Normal</option>
+                            <option value='poison' >Poison</option>
+                            <option value='psychic' >Psychic</option>
+                            <option value='rock' >Rock</option>
+                            <option value='steel' >Steel</option>
+                            <option value='water' >Water</option>
+
+                        </select>
+
                     </div>
 
                     {/* ABILITY*/}
