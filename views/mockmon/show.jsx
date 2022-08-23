@@ -10,7 +10,7 @@ function show (data) {
                 <h3 style={{fontWeight:'Bold', fontSize: '75px'}}><a href={`/mockmon/${data.pokemon.id}`}>
                     {data.pokemon.species}
                 </a></h3>
-                <img src={data.pokemon.image} alt={data.pokemon.name}></img>
+                <img className='mockImg' src={data.pokemon.image} alt={data.pokemon.name}></img>
             </div>
             <div className='stripeTest' style={{display: 'inline-block', textAlign: 'left', 
             margin: '10px', padding: '10px',
