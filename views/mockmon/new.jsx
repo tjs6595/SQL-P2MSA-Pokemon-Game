@@ -89,7 +89,10 @@ function newForm (data) {
                     {/* DEX ENTRY*/}
                     <div className='form-group'>
                         <label htmlFor='dex_entry'>Dex Entry</label>
-                        <input className='form-control' id='dex_entry' name='dex_entry' />
+                        <textarea cols='3' rows='3' 
+                        className='form-control' id='dex_entry' name='dex_entry'
+                        placeholder='Write some info about your new Mockmon'
+                        />
                     </div>
 
                     {/* Move 1 */}
