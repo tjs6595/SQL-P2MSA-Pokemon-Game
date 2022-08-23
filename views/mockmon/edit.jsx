@@ -90,7 +90,10 @@ function editForm (data) {
                     {/* DEX ENTRY*/}
                     <div className='form-group'>
                         <label htmlFor='dex_entry'>Dex Entry</label>
-                        <input className='form-control' id='dex_entry' name='dex_entry'  defaultValue={data.pokemon.dex_entry} />
+                        <textarea cols='3' rows='3' 
+                        className='form-control' id='dex_entry' name='dex_entry'
+                        defaultValue={data.pokemon.dex_entry}
+                        />
                     </div>
 
                     {/* Move 1 */}
@@ -118,7 +121,10 @@ function editForm (data) {
                 
                 <div className='d-flex justify-content-center'>
                     {/* SUBMIT BUTTON */}
-                    <input className='btn btn-success col-sm-3' type='submit' value='Edit Mockmon' />
+                    <input className='btn btn-success col-sm-3' type='submit' 
+                    value='Edit Mockmon'
+                    style={{margin: '15px'}}
+                    />
                 </div>
                 
                 </div>

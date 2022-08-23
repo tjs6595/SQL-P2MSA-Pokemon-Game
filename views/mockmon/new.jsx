@@ -120,7 +120,10 @@ function newForm (data) {
 
                 <div className='d-flex justify-content-center'>
                     {/* SUBMIT BUTTON */}
-                    <input className='btn btn-success col-sm-3' type='submit' value='Add Mockmon' />
+                    <input className='btn btn-success col-sm-3' 
+                    type='submit' value='Add Mockmon'
+                    style={{margin: '15px'}}
+                    />
                 </div>
                 </div>
             </form>
