@@ -21,7 +21,7 @@ function play(){
                     </p>
                     
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: "<iframe src='http://localhost:8080/' />"}} />
+                <div dangerouslySetInnerHTML={{ __html: "<iframe src='https://malfell.github.io/Pokemon-Game-Alone/' />"}} />
 
 
             
