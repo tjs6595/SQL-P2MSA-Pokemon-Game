@@ -12,6 +12,7 @@ function editForm (data) {
                     {/* MOCKMON SPECIES */}
                     <div className='form-group col-sm-4'>
                         <label htmlFor='species'>Species</label>
+                        <span className="required-field">*</span>
                         <input className='form-control' id='species' name='species' 
                         defaultValue={data.pokemon.species} 
                         maxLength='10' type='text'
@@ -34,6 +35,7 @@ function editForm (data) {
                     {/* MOCKMON TYPE 1 */}
                     <div className='form-group col-sm-4'>
                         <label htmlFor='type_1'>Type 1</label>
+                        <span className="required-field">*</span>
                         <select className='form-control' 
                         id='type_1' name='type_1' 
                         defaultValue={data.pokemon.type_1}  
@@ -88,9 +90,11 @@ function editForm (data) {
                     {/* ABILITY*/}
                     <div className='form-group col-sm-4'>
                         <label htmlFor='ability'>Ability</label>
+                        <span className="required-field">*</span>
                         <input className='form-control' id='ability' name='ability'  
                         defaultValue={data.pokemon.ability}
                         maxLength='20' type='text'
+                        required
                          />
                     </div>
 
@@ -106,17 +110,21 @@ function editForm (data) {
                     {/* Move 1 */}
                     <div className='form-group col-sm-3'>
                         <label htmlFor='move_1'>Move #1</label>
+                        <span className="required-field">*</span>
                         <input className='form-control' id='move_1' name='move_1'  
                         defaultValue={data.pokemon.move_1}
                         maxLength='20' type='text'
+                        required
                         />
                     </div>
                     {/* Move 2 */}
                     <div className='form-group col-sm-3'>
                         <label htmlFor='move_2'>Move #2</label>
+                        <span className="required-field">*</span>
                         <input className='form-control' id='move_2' name='move_2'  
                         defaultValue={data.pokemon.move_2}
                         maxLength='20' type='text'
+                        required
                         />
                     </div>
                     {/* Move 3 */}

@@ -97,3 +97,7 @@ background-size: 100% 40px;
   border: solid;
   border-radius: 45%;
 }
+
+.required-field {
+  color: red;
+}
