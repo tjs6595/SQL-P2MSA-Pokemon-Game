@@ -12,6 +12,7 @@ function newForm (data) {
                     {/* MOCKMON SPECIES */}
                     <div className='form-group col-sm-4'>
                         <label htmlFor='species'>Species</label>
+                        <span className="required-field">*</span>
                         <input className='form-control' id='species' name='species' 
                         maxLength='10' type='text'
                         pattern="[a-zA-Z]+" 
