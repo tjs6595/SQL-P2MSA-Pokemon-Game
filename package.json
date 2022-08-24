@@ -1,6 +1,9 @@
 {
   "name": "sql-p2msa-pokemon-game",
   "version": "1.0.0",
+  "engines": {
+    "node": "v16.14.2"
+  },
   "description": "This mock game is inspired by Pokemon. It is a demo version of what could be a longer game.",
   "main": "server.js",
   "scripts": {
