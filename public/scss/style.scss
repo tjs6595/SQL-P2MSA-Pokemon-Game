@@ -1,0 +1,196 @@
+@import "btnConfig";
+@import "utilities";
+@import "config";
+
+
+body {
+    @include set-bg;
+    @include set_text_center;
+    font-family: $font-stack;
+    line-height: 1;
+}
+
+main {
+    margin-right: $default-margin;
+    margin-left: $default-margin;
+    background-color: $main-bg-color;
+    padding: $default-padding
+}
+
+h1 {
+  color: $h1-color;
+}
+
+h4 {
+  color: $h4-color;
+}
+
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
+  
+    li {
+        display: inline;
+        margin-right: 25px;
+    }
+  
+    a {
+        color: $nav-item-color;
+        font-size: 1.5em;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: justify;
+
+        &:hover {
+            color: $nav-hover-color;
+        }
+    }
+}
+
+.instructions {
+    @include set_text_center;
+    margin-right: $default-margin;
+    margin-left: $default-margin;
+    padding-top: $default-padding;
+    padding-bottom: $default-padding;
+    font-size: 1.3em;
+}
+
+#errorPageText {
+    font-size: 2em;
+}
+
+footer {
+    margin-top: $default-margin;
+    margin-right: $default-margin;
+    margin-left: $default-margin;
+    background-color: $main-bg-color;
+    color: scale-color($main-bg-color, $lightness: -50%);
+    padding-top: $default-padding;
+    padding-bottom: $default-padding;
+
+    p {
+        @include footer-txt-size($default-font-size);
+    }
+    li {
+        list-style-type: none;
+
+        &:hover {
+            color: $nav-hover-color;
+        }
+    }
+}
+  
+iframe {
+    height: 593px;
+    width: 1050px;
+}
+
+image {
+    height: $default-img-height;
+    width: $default-img-width;
+}
+
+.stripeTest {
+    background: linear-gradient(
+    to bottom,
+    #f5f8e7,
+    #f5f8e7 97%,
+    #92b7df 40%,
+    #92b7df
+);
+    background-size: 100% 40px;
+}
+
+.mockImg {
+    border: solid;
+    border-radius: 45%;
+}
+  
+.required-field {
+    color: red;
+}
+
+
+
+
+
+
+// This code is related to some of the aspects of SCSS we have yet to cover.
+// While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
+// $spaceamounts: (1,2,3,4,5);
+
+// @each $space in $spaceamounts {
+//   .m-#{$space} {
+//     margin: #{$space}rem;
+//   }
+//   .my-#{$space} {
+//     margin: #{$space}rem 0;
+//   }
+
+//   .p-#{$space} {
+//     padding: #{$space}rem;
+//   }
+//   .py-#{$space} {
+//     padding: #{$space}rem 0;
+//   }
+// }
+
+
+
+
+// .hero {
+//     // This is where the bulk of the SCSS styling needs to be done
+  
+//     // Take a look at the other files we've built already. How can they be useful here?
+  
+//     // Also, take time to review the features of SCSS we've already covered:
+//     // 1. $variables
+//     // 2. nesting (dont forget about the ampersand (&) parent selector!)
+//     // 3. At-Rules
+//     @include set-bg($primary-color);
+//     height: 600px;
+  
+//     nav {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+  
+//       ul {
+//         display: flex;
+//         list-style-type: none;
+//       }
+  
+//       li {
+//         padding: 15px;
+//       }
+  
+//       a {
+//         color: text-color-picker($primary-color);
+//       }
+  
+//       a:hover {
+//         color: $secondary-color;
+//       }
+//     }
+  
+//     &-content {
+//       height: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin-top: 30px;
+  
+//       img {
+//         width: 50%;
+//       }
+  
+//       h1 {
+//         font-size: 50px;
+//         line-height: 1.2;
+//       }
+//     }
+//   }

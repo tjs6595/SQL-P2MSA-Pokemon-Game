@@ -1,33 +1,33 @@
-body {
-  background-color: #79a0c9;
-  text-align: center;
-  font-family: Trebuchet MS, Arial, sans-serif;
-  line-height: 1;
-}
+/* body { */
+  /* background-color: #79a0c9; */
+  /* text-align: center; */
+/* } */
 
-main {
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: #f7e3b7;
-  padding: 20px;
-}
-
-h1 {
+/* h1 {
   color: #211f36;
 }
 
 h4 {
   color: #211f36;
-}
+} */
 
-nav ul {
+/* main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #f7e3b7;
+  padding: 20px
+} */
+
+/* nav ul {
   list-style-type: none;
   margin: 0;
 }
+
 nav li {
   display: inline;
   margin-right: 25px;
 }
+
 nav a {
   color: #4f4843;
   font-size: 1.5em;
@@ -36,41 +36,35 @@ nav a {
   text-decoration: none;
   text-align: justify;
 }
+
 nav a:hover {
   color: #cd2715;
-}
+} */
 
-.instructions {
+/* .instructions {
   text-align: center;
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.3em;
-}
+} */
 
-#errorPageText {
+/* #errorPageText {
   font-size: 2em;
-}
+} */
 
-footer {
+/* footer {
   margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
   background-color: #f7e3b7;
-  color: #c28c16;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-footer p {
-  font-size: 25px;
-  size: 100px;
-}
-footer li {
+} */
+
+/* li {
   list-style-type: none;
-}
-footer li:hover {
-  color: #cd2715;
 }
 
 iframe {
@@ -81,20 +75,28 @@ iframe {
 image {
   height: 100px;
   width: 100px;
-}
+} */
 
-.stripeTest {
-  background: linear-gradient(to bottom, #f5f8e7, #f5f8e7 97%, #92b7df 40%, #92b7df);
-  background-size: 100% 40px;
-}
+/* Followed this tutorial to figure out
+how to get stripes for the notebook page effect
+https://css-tricks.com/stripes-css/ */
+/* .stripeTest {
+  background: linear-gradient(
+  to bottom,
+  #f5f8e7,
+  #f5f8e7 97%,
+  #92b7df 40%,
+  #92b7df
+  
+);
+background-size: 100% 40px;
+} */
 
-.mockImg {
+/* .mockImg {
   border: solid;
   border-radius: 45%;
 }
 
 .required-field {
   color: red;
-}
-
-/*# sourceMappingURL=style.css.map */
+} */

@@ -1,0 +1,34 @@
+
+  
+  // SCSS Function that will set the footer text size.
+  @function set-font-size($size) {
+    @if(p) {
+      @return 100px;
+    } @else {
+      @return 25px;
+    }
+  }
+  
+  // SCSS Mixin
+  @mixin set-bg {
+    background-color: $home-bg-color;
+  }
+  
+  @mixin set_text_center{
+    text-align: center;
+  }
+
+  @mixin footer-txt-size($size){
+    font-size: $size;
+    size: set-font-size($size)
+  }
+
+
+//   // Standard CSS
+//   .box {
+//     max-width: 1100px;
+//     padding: 0 30px;
+//     margin: 0 auto;
+//     overflow: auto;
+//   }
+  
