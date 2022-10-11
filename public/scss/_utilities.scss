@@ -1,12 +1,15 @@
 
   
   // SCSS Function that will set the footer text size.
-  @function set-font-size($size) {
-    @if(p) {
-      @return 100px;
+  @function set-font-size($size, $is_title) {
+    @if($is_title == true) {
+        $size: 50px;
+        @return $size;
     } @else {
-      @return 25px;
+        $size: 25px;
+      @return $size;
     }
+    @error "Invalid font size: `#{$size}`.";
   }
   
   // SCSS Mixin
@@ -18,17 +21,6 @@
     text-align: center;
   }
 
-  @mixin footer-txt-size($size){
-    font-size: $size;
-    size: set-font-size($size)
+  @mixin footer-txt-size($size, $is_title){
+    font-size: set-font-size($size, $is_title)
   }
-
-
-//   // Standard CSS
-//   .box {
-//     max-width: 1100px;
-//     padding: 0 30px;
-//     margin: 0 auto;
-//     overflow: auto;
-//   }
-  

@@ -73,10 +73,11 @@ footer {
     padding-bottom: $default-padding;
 
     p {
-        @include footer-txt-size($default-font-size);
+        @include footer-txt-size($default-font-size, true);
     }
     li {
         list-style-type: none;
+        @include footer-txt-size($default-font-size, false);
 
         &:hover {
             color: $nav-hover-color;

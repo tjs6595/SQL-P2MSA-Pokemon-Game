@@ -1,3 +1,10 @@
+button {
+  display: inline-block;
+}
+button:hover {
+  transform: scale(0.8);
+}
+
 body {
   background-color: #79a0c9;
   text-align: center;
@@ -63,11 +70,11 @@ footer {
   padding-bottom: 20px;
 }
 footer p {
-  font-size: 25px;
-  size: 100px;
+  font-size: 50px;
 }
 footer li {
   list-style-type: none;
+  font-size: 25px;
 }
 footer li:hover {
   color: #cd2715;
