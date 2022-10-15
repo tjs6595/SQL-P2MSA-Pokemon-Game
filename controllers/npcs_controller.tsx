@@ -15,7 +15,7 @@ npcs.use(methodOverride('_method'))
 
 // INDEX ROUTE
 // FIND ALL NPCs
-npcs.get('/', async (req, res) => {
+npcs.get('/', async (req: any, res: any) => {
     db.Npc.find()
         .then((npcs) => {
             res.render('npcs/index', { npcs })

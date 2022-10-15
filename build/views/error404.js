@@ -7,12 +7,10 @@ const Def = require('./default');
 function error404() {
     return (
     // Using Def component as a wrapper
-    <Def>
-            <main>
-                <h1>404: PAGE NOT FOUND</h1>
-                <p id="errorPageText">Sorry, you can't find Mockmon over here. :&#40;</p>
-            </main>
-        </Def>);
+    React.createElement(Def, null,
+        React.createElement("main", null,
+            React.createElement("h1", null, "404: PAGE NOT FOUND"),
+            React.createElement("p", { id: "errorPageText" }, "Sorry, you can't find Mockmon over here. :("))));
 }
 //export error404 function
 module.exports = error404;

@@ -1,5 +1,5 @@
-const React = require('react')
-const Def = require('../default')
+import react from 'react'
+import Def from '../default'
 
 // pass in new data
 function editForm (data: any) {

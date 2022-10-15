@@ -9,18 +9,15 @@ const Def = require('../default');
 function index(data) {
     //formats data into HTML so page can display it
     let npcFormatted = data.npcs.map((npcs) => {
-        return (<div>
-                    <h3>{npcs.name}</h3>
-            </div>);
+        return (React.createElement("div", null,
+            React.createElement("h3", null, npcs.name)));
     });
     return (
     // Wrapping in Def component
-    <Def>
-        <main>
-            <h1>NPC List</h1>  
-            {npcFormatted}         
-        </main>
-    </Def>);
+    React.createElement(Def, null,
+        React.createElement("main", null,
+            React.createElement("h1", null, "NPC List"),
+            npcFormatted)));
 }
 // exports index
 module.exports = index;
