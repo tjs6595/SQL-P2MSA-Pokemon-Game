@@ -1,6 +1,6 @@
 // DEPENDENCIES
 // create router and save it to pokemon variable
-const express = require('express')
+import express from 'express'
 const methodOverride = require('method-override')
 const pokemon = express.Router()
 const Pokemon = require('../mongo_models/pokemon.js')
@@ -17,10 +17,10 @@ pokemon.use(methodOverride('_method'))
 // SHOW ALL POKEMON
 pokemon.get('/', async (req, res) => {
     db.Pokemon.find()
-        .then((pokemon) => {
+        .then((pokemon: any) => {
             res.render('mockmon/index', { pokemon })
         })
-        .catch(err => {
+        .catch((err: any) => {
             console.log(err)
             res.render('error404')
         })
@@ -33,7 +33,7 @@ pokemon.post('/', (req, res) => {
     .then(() => {
       res.redirect('/mockmon')
     })
-    .catch(err => {
+    .catch((err: any) => {
       console.log('err', err)
       res.render('error404')
     })
@@ -48,10 +48,10 @@ pokemon.get('/new', (req, res) => {
 // SHOW SPECIFIC MOCKMON
 pokemon.get('/:id', (req, res) => {
   db.Pokemon.findById(req.params.id)
-  .then( pokemon => {
+  .then((pokemon: any) => {
       res.render('mockmon/show', { pokemon })
   })
-  .catch( err => {
+  .catch((err: any) => {
     console.log('err', err)
     res.render('error404')
   })
@@ -64,7 +64,7 @@ pokemon.put('/:id', (req, res) => {
   .then(() => {
     res.redirect(`/mockmon/${req.params.id}`)
   })
-  .catch(err => {
+  .catch((err: any) => {
     console.log('err', err)
     res.render('error404')
   })
@@ -74,10 +74,10 @@ pokemon.put('/:id', (req, res) => {
 pokemon.delete('/:id', (req, res) => {
     // res.send('DELETE /places/:id stub')
     db.Pokemon.findByIdAndDelete(req.params.id)
-    .then(pokemon => {
+    .then((pokemon: any) => {
         res.redirect('/mockmon')
     })
-    .catch(err => {
+    .catch((err: any) => {
         console.log('err', err)
         res.render('error404')
     })
@@ -87,10 +87,10 @@ pokemon.delete('/:id', (req, res) => {
 pokemon.get('/:id/edit', (req, res) => {
   //look up place data by ID and send it to edit.jsx view
   db.Pokemon.findById(req.params.id)
-  .then(pokemon => {
+  .then((pokemon: any) => {
     res.render('mockmon/edit', { pokemon })
   })
-  .catch(err => {
+  .catch((err: any) => {
     res.render('error404', err)
   })
 })

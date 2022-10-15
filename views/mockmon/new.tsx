@@ -2,7 +2,7 @@ import React = require('react')
 const Def = require('../default')
 
 // pass in new data
-function newForm (data) {
+function newForm (data: any) {
     return (
         <Def>
           <main>

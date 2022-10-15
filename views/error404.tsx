@@ -1,6 +1,6 @@
 // Error page
 //import React and Def from default.jsx
-const React = require('react');
+import React from 'react';
 const Def = require('./default');
 
 //create error404 stub function

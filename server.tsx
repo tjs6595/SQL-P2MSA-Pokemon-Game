@@ -1,5 +1,5 @@
 // DEPENDENCIES
-const express = require('express')
+import express from 'express'
 const app = express()
 const methodOverride = require('method-override')
 // switched to "const mongoose" instead of "const { Mongoose }"" and made the 

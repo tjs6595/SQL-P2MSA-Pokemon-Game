@@ -1,8 +1,9 @@
 "use strict";
 // Pokemon Index Page
 // THIS IS JUST A TEST!
+Object.defineProperty(exports, "__esModule", { value: true });
 // DEPENDENCIES
-const React = require('react');
+const React = require("react");
 const Def = require('../default');
 //stub function for index
 //accepts data paramter from index

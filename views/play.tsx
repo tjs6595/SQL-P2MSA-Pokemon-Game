@@ -1,5 +1,5 @@
 // DEPENDENCIES
-const React = require('react');
+import React = require('react');
 const Def = require('./default');
 
 // https://stackoverflow.com/questions/38497334/how-to-run-html-file-on-localhost

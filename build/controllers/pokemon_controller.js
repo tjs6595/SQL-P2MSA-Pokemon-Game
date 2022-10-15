@@ -8,11 +8,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // DEPENDENCIES
 // create router and save it to pokemon variable
-const express = require('express');
+const express_1 = __importDefault(require("express"));
 const methodOverride = require('method-override');
-const pokemon = express.Router();
+const pokemon = express_1.default.Router();
 const Pokemon = require('../mongo_models/pokemon.js');
 // reference the models folder
 const db = require('../mongo_models');
@@ -25,7 +29,7 @@ pokemon.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         .then((pokemon) => {
         res.render('mockmon/index', { pokemon });
     })
-        .catch(err => {
+        .catch((err) => {
         console.log(err);
         res.render('error404');
     });
@@ -37,7 +41,7 @@ pokemon.post('/', (req, res) => {
         .then(() => {
         res.redirect('/mockmon');
     })
-        .catch(err => {
+        .catch((err) => {
         console.log('err', err);
         res.render('error404');
     });
@@ -50,10 +54,10 @@ pokemon.get('/new', (req, res) => {
 // SHOW SPECIFIC MOCKMON
 pokemon.get('/:id', (req, res) => {
     db.Pokemon.findById(req.params.id)
-        .then(pokemon => {
+        .then((pokemon) => {
         res.render('mockmon/show', { pokemon });
     })
-        .catch(err => {
+        .catch((err) => {
         console.log('err', err);
         res.render('error404');
     });
@@ -65,7 +69,7 @@ pokemon.put('/:id', (req, res) => {
         .then(() => {
         res.redirect(`/mockmon/${req.params.id}`);
     })
-        .catch(err => {
+        .catch((err) => {
         console.log('err', err);
         res.render('error404');
     });
@@ -74,10 +78,10 @@ pokemon.put('/:id', (req, res) => {
 pokemon.delete('/:id', (req, res) => {
     // res.send('DELETE /places/:id stub')
     db.Pokemon.findByIdAndDelete(req.params.id)
-        .then(pokemon => {
+        .then((pokemon) => {
         res.redirect('/mockmon');
     })
-        .catch(err => {
+        .catch((err) => {
         console.log('err', err);
         res.render('error404');
     });
@@ -86,10 +90,10 @@ pokemon.delete('/:id', (req, res) => {
 pokemon.get('/:id/edit', (req, res) => {
     //look up place data by ID and send it to edit.jsx view
     db.Pokemon.findById(req.params.id)
-        .then(pokemon => {
+        .then((pokemon) => {
         res.render('mockmon/edit', { pokemon });
     })
-        .catch(err => {
+        .catch((err) => {
         res.render('error404', err);
     });
 });

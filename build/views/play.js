@@ -1,6 +1,7 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // DEPENDENCIES
-const React = require('react');
+const React = require("react");
 const Def = require('./default');
 // https://stackoverflow.com/questions/38497334/how-to-run-html-file-on-localhost
 // Instructions for hosting game locally. Make sure to use http://localhost:8080/ and 

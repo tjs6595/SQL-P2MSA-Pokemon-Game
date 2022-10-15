@@ -1,10 +1,10 @@
 // default view for every page
 // DEPENDENCIES
-const React = require('react');
+import React from 'react';
 
 
 // stub function for HTML template
-function Def(html){
+function Def(html: { children: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }){
     return (
         <html>
             <head>

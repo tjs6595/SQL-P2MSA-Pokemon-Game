@@ -1,12 +1,9 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const default_1 = __importDefault(require("../default"));
+const Def = require('../default');
 // pass in new data
 function editForm(data) {
-    return (React.createElement(default_1.default, null,
+    return (React.createElement(Def, null,
         React.createElement("main", null,
             React.createElement("h1", null, "Edit Mockmon"),
             React.createElement("form", { method: 'POST', action: `/mockmon/${data.pokemon.id}?_method=PUT` },

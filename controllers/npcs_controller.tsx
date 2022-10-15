@@ -1,6 +1,6 @@
 // DEPENDENCIES
 // create router and save it to pokemon variable
-const express = require('express')
+import express from 'express'
 const methodOverride = require('method-override')
 const npcs = express.Router()
 const Npc = require('../mongo_models/npc.js')
@@ -17,10 +17,10 @@ npcs.use(methodOverride('_method'))
 // FIND ALL NPCs
 npcs.get('/', async (req: any, res: any) => {
     db.Npc.find()
-        .then((npcs) => {
+        .then((npcs: any) => {
             res.render('npcs/index', { npcs })
         })
-        .catch(err => {
+        .catch((err: any) => {
             console.log(err)
             res.render('error404')
         })

@@ -8,11 +8,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // DEPENDENCIES
 // create router and save it to pokemon variable
-const express = require('express');
+const express_1 = __importDefault(require("express"));
 const methodOverride = require('method-override');
-const npcs = express.Router();
+const npcs = express_1.default.Router();
 const Npc = require('../mongo_models/npc.js');
 // reference the models folder
 const db = require('../mongo_models');
@@ -25,7 +29,7 @@ npcs.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         .then((npcs) => {
         res.render('npcs/index', { npcs });
     })
-        .catch(err => {
+        .catch((err) => {
         console.log(err);
         res.render('error404');
     });

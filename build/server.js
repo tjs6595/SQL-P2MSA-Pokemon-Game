@@ -1,7 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // DEPENDENCIES
-const express = require('express');
-const app = express();
+const express_1 = __importDefault(require("express"));
+const app = (0, express_1.default)();
 const methodOverride = require('method-override');
 // switched to "const mongoose" instead of "const { Mongoose }"" and made the 
 // lowercase for "mongoose" in the MONGOOSE CONNECTION code because that was the way
@@ -14,9 +18,9 @@ require('dotenv').config();
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 // allows access to public folder (such as for CSS)
-app.use(express.static('public'));
+app.use(express_1.default.static('public'));
 // body parser for recieving data
-app.use(express.urlencoded({ extended: true }));
+app.use(express_1.default.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 //MONGOOSE CONNECTION
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => { console.log('connected to mongo: ', process.env.MONGO_URI); });
